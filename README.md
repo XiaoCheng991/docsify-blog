@@ -6,7 +6,7 @@
 ## ⭐️ HTML5新特性  
 
 1. 语义化标签  
-  ![alt text](image.png)  
+  ![alt text](images/image.png)  
 2. 浏览器支持  
 3. 多媒体标签  
     + **embed**(视频、音频 不支持移动端)  
@@ -64,7 +64,7 @@
 
 ### ⭐️ 盒子模型
 
-   ![alt text](image-1.png)
+   ![alt text](images/image-1.png)
 
 ### ⭐️⭐️⭐️ 层叠规则
 
@@ -105,7 +105,7 @@
    > `center`：中点对齐  
    > `baseline`: 项目的第一行文字的基线对齐
    >
-![alt text](image-3.png)
+![alt text](images/image-3.png)
 6. 项目属性
    > `order` ========= 数值越小越靠前(0)  
    > `flex-grow` ====== 放大比例(0)  
@@ -131,7 +131,7 @@
          grid-column-end: 3;  
          }
    >
-![alt text](image-4.png)
+![alt text](images/image-4.png)
 
 ##### 瀑布流
 
@@ -218,7 +218,7 @@ linear-gradient(to right, red , yellow)
 background-image: linear-gradient(-90deg, red, yellow);
 ```
 
-<img src="image-5.png" alt="渐变色" width="200" height="150">
+<img src="images/image-5.png" alt="渐变色" width="200" height="150">
 
 #### 背景
 
@@ -232,9 +232,9 @@ background-image: linear-gradient(-90deg, red, yellow);
 
 > border-radius 圆角  
 > box-shadow 阴影（10px 10px 5px #888888）  
-<img src="image-6.png" alt="圆角和阴影示例" width="200" height="200">  
+<img src="images/image-6.png" alt="圆角和阴影示例" width="200" height="200">  
 > border-image 边界图片   
-<img src="image-7.png" alt="边界图片示例" width="100" height="100">
+<img src="images/image-7.png" alt="边界图片示例" width="100" height="100">
 
 #### 圆角
 
@@ -713,7 +713,7 @@ xmlhttp.open("GET","/try/ajax/gethint.php?q="+str,true);
 + 同步任务
 + 异步任务
 
-<img src="image-8.png" width="500px" height="400px"/>)
+<img src="images/image-8.png" width="500px" height="400px"/>)
 
 ```js
    let data = [];                            
@@ -919,14 +919,14 @@ Domain Name System（域名系统）
 实现域名和IP地址相互映射的一个分布式数据库  
 ***域名解析***  ： 通过主机名得到对应IP地址
 
-<img src="image-9.png" height="350px" width="500px">
+<img src="images/image-9.png" height="350px" width="500px">
 
 + 递归域名服务器(本地缓存)  
 + 根权威服务器、顶级域权威、二级域权威
 
 + 记录一条域名信息映射关系，称之为资源记录（RR）  
 
-   <img src="image-10.png" height="200px" width="500px">
+   <img src="images/image-10.png" height="200px" width="500px">
 
 + 资源记录类型 type:
   + A : IPv4
