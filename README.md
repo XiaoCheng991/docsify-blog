@@ -6,7 +6,7 @@
 ## ⭐️ HTML5新特性  
 
 1. 语义化标签  
-  ![alt text](images/image.png)  
+  <img src="images/image.png" width="350" height="300">  
 2. 浏览器支持  
 3. 多媒体标签  
     + **embed**(视频、音频 不支持移动端)  
@@ -64,7 +64,7 @@
 
 ### ⭐️ 盒子模型
 
-   ![alt text](images/image-1.png)
+   <img src="images/image-1.png"  width="400" height="300">
 
 ### ⭐️⭐️⭐️ 层叠规则
 
@@ -105,8 +105,10 @@
    > `center`：中点对齐  
    > `baseline`: 项目的第一行文字的基线对齐
    >
-![alt text](images/image-3.png)
-6. 项目属性
+
+<img src="images/image-3.png" width="400" height="200">
+
+1. 项目属性
    > `order` ========= 数值越小越靠前(0)  
    > `flex-grow` ====== 放大比例(0)  
    > `flex-shrink` ====== 缩小比例(1)  
@@ -131,7 +133,7 @@
          grid-column-end: 3;  
          }
    >
-![alt text](images/image-4.png)
+<img src="images/image-4.png" width="400" height="250">
 
 ##### 瀑布流
 
@@ -713,7 +715,7 @@ xmlhttp.open("GET","/try/ajax/gethint.php?q="+str,true);
 + 同步任务
 + 异步任务
 
-<img src="images/image-8.png" width="500px" height="400px"/>)
+<img src="images/image-8.png" width="500px" height="400px"/>
 
 ```js
    let data = [];                            
