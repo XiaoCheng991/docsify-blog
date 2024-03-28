@@ -10,7 +10,7 @@
 ### ⭐️ 域名
 
 百度的IP地址 : 110.242.68.66(不好记)  
-转换成域名：<https:www.baidu.com>
+转换成域名：<https://www.baidu.com>
 
 + 协议：https
 + 二级域名：baidu.com
@@ -22,14 +22,14 @@ Domain Name System（域名系统）
 实现域名和IP地址相互映射的一个分布式数据库  
 ***域名解析***  ： 通过主机名得到对应IP地址
 
-<img src="../images/dns解析.png" width="400">
+<img src="../images/dns解析.png" width="400px">
 
 + 递归域名服务器(本地缓存)  
 + 根权威服务器、顶级域权威、二级域权威
 
 + 记录一条域名信息映射关系，称之为资源记录（RR）  
 
-<img src="../images/dns资源.png" width="400">
+<img src="../images/dns资源.png" width="400px">
 
 + 资源记录类型 type:
   + A : IPv4

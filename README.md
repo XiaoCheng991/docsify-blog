@@ -397,11 +397,11 @@ add();
 add();
 add();   //计数器结果为3
 
-分析：
-立即执行函数(function(){  })(), 由于return的是另一个function(),
-所以在执行一次后,就变成 var add = (function(){return counter += 1})
-而counter=0就执行一次,且每次都会访问局部变量counter，counter也不会重置，
-一直保留数据
+// 分析：
+// 立即执行函数(function(){  })(), 由于return的是另一个function(),
+// 所以在执行一次后,就变成 var add = (function(){return counter += 1})
+// 而counter=0就执行一次,且每次都会访问局部变量counter，counter也不会重置，
+// 一直保留数据
 ```
 
 ### ✅ 对象
@@ -410,27 +410,27 @@ add();   //计数器结果为3
   
 + 每个对象（object）都有一个私有属性指向另一个名为原型（prototype）的对象。原型对象也有一个自己的原型，层层向上直到一个对象的原型为 null。
 
-```js
-const parent = {
-  value: 2,
-  method() {
-    return this.value + 1;
-  },};
-// this指向了 parent
-console.log(parent.method()); // 3
+   ```js
+   const parent = {
+   value: 2,
+   method() {
+      return this.value + 1;
+   },};
+   // this指向了 parent
+   console.log(parent.method()); // 3
 
 
-// child继承parent
-const child = {
-  __proto__: parent,
-};
-console.log(child.method()); // 3
-// 调用 child.method 时，“this”指向了 child,没有就找原型的
+   // child继承parent
+   const child = {
+   __proto__: parent,
+   };
+   console.log(child.method()); // 3
+   // 调用 child.method 时，“this”指向了 child,没有就找原型的
 
-// 遮蔽 value从3变成4，相当于“重写”
-child.value = 4; 
-console.log(child.method()); // 5
-```
+   // 遮蔽 value从3变成4，相当于“重写”
+   child.value = 4; 
+   console.log(child.method()); // 5
+   ```
 
 ### ✅ 作用域（作用域链）
 
