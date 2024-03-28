@@ -336,7 +336,7 @@ HashMap中的hasCode方法转换(同一个Key生成的哈希值相同)
 + 性质3：包含n个节点的二叉树的高度至少为log2 (n+1)
 + 性质4：在任意一颗二叉树中，若终端节点的个数为n0,度为2的节点数为n2，则n0=n2+1  
 
-<img src="../images/二叉树.png" width="350">.
+<img src="../images/二叉树.png" width="350">
 
 分类：
 
