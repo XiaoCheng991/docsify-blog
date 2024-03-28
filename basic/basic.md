@@ -22,14 +22,14 @@ Domain Name System（域名系统）
 实现域名和IP地址相互映射的一个分布式数据库  
 ***域名解析***  ： 通过主机名得到对应IP地址
 
-<img src="images/image-9.png" height="350px" width="500px">
+<img src="../images/image-9.png" height="350px" width="500px">
 
 + 递归域名服务器(本地缓存)  
 + 根权威服务器、顶级域权威、二级域权威
 
 + 记录一条域名信息映射关系，称之为资源记录（RR）  
 
-   <img src="images/image-10.png" height="200px" width="500px">
+   <img src="../images/image-10.png" height="200px" width="500px">
 
 + 资源记录类型 type:
   + A : IPv4
@@ -335,7 +335,7 @@ HashMap中的hasCode方法转换(同一个Key生成的哈希值相同)
 + 性质2：深度为k的二叉树至多有2^k-1个节点（k>=1）
 + 性质3：包含n个节点的二叉树的高度至少为log2 (n+1)
 + 性质4：在任意一颗二叉树中，若终端节点的个数为n0,度为2的节点数为n2，则n0=n2+1
-<img src="images/二叉树.png" width="400px">
+<img src="../images/二叉树.png" width="400px">
 
 分类：
 
@@ -352,7 +352,7 @@ HashMap中的hasCode方法转换(同一个Key生成的哈希值相同)
 
 #### 排序
 
-![alt text](images/排序.png)
+![alt text](../images/排序.png)
 
 + ①冒泡排序  
    比较相邻的元素，交换，重复多轮  
@@ -364,7 +364,7 @@ HashMap中的hasCode方法转换(同一个Key生成的哈希值相同)
 + ④希尔排序(缩小增量法)  
    分组思想，取gap=5值分5组，在每组中进行直接插入排序，并每次减小gap值。  
 
-   ![alt text](images/希尔排序.png)
+   ![alt text](../images/希尔排序.png)
 + ⑤选择排序  
    在未排序中找最小，放到起始位置，再在剩余未排序中找最小拍到已排序的末尾
 + ⑥堆排序
@@ -404,7 +404,7 @@ HashMap中的hasCode方法转换(同一个Key生成的哈希值相同)
   > 若mid < x,令low = mid+1  ,获取mid新, 再执行上一步  
   > 若mid > x,令low = mid-1  ,获取mid新, 再执行上上步
 + 插值查找(类似于二分查找)
-  ![alt text](images/插值查找.png) 
+  ![alt text](../images/插值查找.png) 
 + 树结构查找
   > 二叉树查找
 + 散列表查找(哈希)  
@@ -513,7 +513,7 @@ if (tempMap.containsKey(n)) {
 
 ### 网络模型
 
-<img src="images/网络模型.png" width="500px">
+<img src="../images/网络模型.png" width="500px">
 
 ### UDP / TCP 协议
 
