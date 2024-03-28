@@ -397,7 +397,7 @@ add();
 add();
 add();   //计数器结果为3
 
-# 分析：
+分析：
 立即执行函数(function(){  })(), 由于return的是另一个function(),
 所以在执行一次后,就变成 var add = (function(){return counter += 1})
 而counter=0就执行一次,且每次都会访问局部变量counter，counter也不会重置，
