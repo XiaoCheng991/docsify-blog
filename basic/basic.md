@@ -22,15 +22,14 @@ Domain Name System（域名系统）
 实现域名和IP地址相互映射的一个分布式数据库  
 ***域名解析***  ： 通过主机名得到对应IP地址
 
-<img src="../images/DNS.png" alt="DNS" height="350" width="500">
+![alt text](../images/dns解析.png)
 
 + 递归域名服务器(本地缓存)  
 + 根权威服务器、顶级域权威、二级域权威
 
 + 记录一条域名信息映射关系，称之为资源记录（RR）  
 
-   <img src="../images/DNS资源记录.png" alt="DNS资源记录" height="200" width="500">
-
+![alt text](../images/dns资源记录.png)
 + 资源记录类型 type:
   + A : IPv4
   + AAAA : IPv6
@@ -336,7 +335,7 @@ HashMap中的hasCode方法转换(同一个Key生成的哈希值相同)
 + 性质3：包含n个节点的二叉树的高度至少为log2 (n+1)
 + 性质4：在任意一颗二叉树中，若终端节点的个数为n0,度为2的节点数为n2，则n0=n2+1  
 
-<img src="../images/二叉树.png" width="450" height="300">
+![alt text](../images/二叉树.png)
 
 分类：
 
@@ -514,7 +513,7 @@ if (tempMap.containsKey(n)) {
 
 ### 网络模型
 
-<img src="../images/网络模型.png" width="500" height="400">
+![alt text](../images/网络模型.png)
 
 ### UDP / TCP 协议
 
