@@ -405,7 +405,7 @@ HashMap中的hasCode方法转换(同一个Key生成的哈希值相同)
   > 若mid < x,令low = mid+1  ,获取mid新, 再执行上一步  
   > 若mid > x,令low = mid-1  ,获取mid新, 再执行上上步
 + 插值查找(类似于二分查找)
-  ![alt text](../images/插值查找.png)
+  ![alt text](images/插值查找.png)
 + 树结构查找
   > 二叉树查找
 + 散列表查找(哈希)  
