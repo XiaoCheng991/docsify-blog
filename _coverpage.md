@@ -1,13 +1,14 @@
 <!-- _coverpage.md -->
 
-# Docsify使用指南  
+# 小橙的Docsify个人博客Blog  
 
-> 💪Docsify使用指南，使用Typora+Docsify打造最强、最轻量级的个人&团队文档。
+> 💪Docsify-XiaoCheng991小橙的编程学习宝典。
 
 ## **简单、轻便 (压缩后 ~21kB)**
 
-- 无需生成 html 文件
-- 众多主题
+- Java
+- 前端
+- 算法
 - 强哥专用
 
 [开始吧！GO](/README.md)
