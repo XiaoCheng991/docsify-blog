@@ -102,6 +102,8 @@ var x=event.target
 
 #### ⭐️ 浏览器渲染过程
 
+![alt text](images/渲染过程.png)
+
 + DOM树渲染
 + 事件循环EventLoop  （主线程执行完去执行等待队列中的task）
 + CSS处理完生成CSSOM
