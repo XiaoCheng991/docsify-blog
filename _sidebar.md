@@ -11,3 +11,9 @@
   * [大数据](docs/8-大数据.md)
 * 扩展
   * [Git与GitHub](docs/7-Git与GitHub.md)
+* 个人提升
+  * [Java八股文](https://zhuanlan.zhihu.com/p/660378669)
+* 书单
+  * [打开一颗心]
+  * [剑桥夜攀者]
+  * [明朝那些事]
