@@ -12,16 +12,29 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <!-- 默认主题 -->
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
+    <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/dark.css"> -->
+    <!--- 网站图标 -->
+    <link rel="shortcut icon" href="logo/apple.png">
+    <link rel="sidebar" href="static/sidebar.css">
+    <!-- 复制提醒 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/sweetalert/1.1.3/sweetalert.min.css" type='text/css' media='all' />
+    <!-- 支持latex -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />
+    <!-- 目录跳转 -->
+    <link rel="stylesheet" href="https://unpkg.com/docsify-toc@1.0.0/dist/toc.css">
+    <!-- 侧边栏 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar-folder.min.css" />
 </head>
 
 <body>
-    <!-- 定义加载时候的动作 -->
-    <div id="app">加载中...</div>
+    <div id="app">🏃‍🏃‍🏃‍💨加载中...</div>
     <script>
         window.$docsify = {
             // 项目名称
-            name: 'Docsify-Guide',
+            name: '📖小橙の笔记',
+            // 点击文档标题后跳转的链接地址
+            nameLink: 'https://xiaocheng991.github.io/docsify-blog/#/',
             // 仓库地址，点击右上角的Github章鱼猫头像会跳转到此地址
             repo: 'https://github.com/XiaoCheng991',
             // 侧边栏支持，默认加载的是项目根目录下的_sidebar.md文件
@@ -30,40 +43,115 @@
             loadNavbar: true,
             // 封面支持，默认加载的是项目根目录下的_coverpage.md文件
             coverpage: true,
+            // 封面和内容单独显示
+            onlyCover: true,
             // 最大支持渲染的标题层级
             maxLevel: 5,
             // 自定义侧边栏后默认不会再生成目录，设置生成目录的最大层级（建议配置为2-4）
-            subMaxLevel: 4,
+            subMaxLevel: 1,
             // 小屏设备下合并导航栏到侧边栏
             mergeNavbar: true,
+            // 让你的内容页在滚动到指定的锚点时，距离页面顶部有一定空间。
+            topMargin: 25,
+            // 切换页面后是否自动跳转到页面顶部
+            auto2top: true,
             /*搜索相关设置*/
             search: {
                 maxAge: 86400000,// 过期时间，单位毫秒，默认一天
                 paths: 'auto',// 注意：仅适用于 paths: 'auto' 模式
-                placeholder: '搜索',              
+                placeholder: '🔍 搜索',              
                 // 支持本地化
                 placeholder: {
                     '/zh-cn/': '搜索',
                     '/': 'Type to search'
                 },
-                noData: '找不到结果',
-                depth: 4,
+                noData: '😒 找不到结果',
+                depth: 6,
                 hideOtherSidebarContent: false,
                 namespace: 'Docsify-Guide',
-            }
+            },
+            // 页脚
+            footer: {
+              copy: '<span>Copyright &copy; 2024 &nbsp 💖 &nbsp</span>',
+              auth: ' <strong><a href="https://github.com/XiaoCheng991" target="_blank">Mr.XiaCheng</a></strong>',
+              pre: '<hr/>',
+              style: 'font-size: 18px; text-align: center;',
+            },
+            // 复制样式
+            copyCode: {
+                buttonText: 'Copy',
+                errorText: 'Error',
+                successText: 'OK!'
+            },
+            // 分章节按钮
+            pagination: {
+                previousText: '上一章节',
+                nextText: '下一章节',
+                crossChapter: true,
+                crossChapterText: true,
+            },
+            // 目录跳转
+            toc: {
+                scope: '.markdown-section',
+                headings: 'h1, h2, h3',
+                title: '📖小橙の笔记',
+            },
+            // 阅读进度条
+            progress: {
+                position: "top",
+                color: "var(--theme-color,#42b983)",
+                height: "4px",
+            },
+            // 高亮
+            "flexible-alerts": {
+                style: 'flat'
+            },
+            // 分享
+            share: {
+                reddit: true,
+                linkedin: true,
+                facebook: true,
+                twitter: true,
+                whatsapp: true,
+                telegram: true,
+            }, 
         }
     </script>
     <!-- docsify的js依赖 -->
-    <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
     <!-- emoji表情支持 -->
-    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
     <!-- 图片放大缩小支持 -->
-    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
     <!-- 搜索功能支持 -->
-    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
     <!--在所有的代码块上添加一个简单的Click to copy按钮来允许用户从你的文档中轻易地复制代码-->
-    <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
-
-  </body>
-
+    <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+    <!-- 页脚 -->
+    <script src="https://unpkg.com/docsify-footer-enh/dist/docsify-footer-enh.min.js"></script>
+    <!-- 复制到剪切板 -->
+    <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code"></script>
+    <!-- 复制提醒 -->
+    <script src="https://cdn.bootcss.com/sweetalert/1.1.3/sweetalert.min.js"></script>
+    <script>
+      document.body.oncopy = function () {
+        swal("复制成功 ",
+              "若要转载或引用请务必保留原文链接，并申明来源。",
+              "success"); };
+    </script>
+    <!-- 进度条 -->
+    <script src="https://cdn.jsdelivr.net/npm/docsify-progress@latest/dist/progress.min.js"></script>
+    <!-- 支持Latex语言 -->
+    <script src="https://cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
+    <!-- 分章节按钮 -->
+    <script src="https://unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+    <!-- 高亮 -->
+    <script src="https://unpkg.com/docsify-plugin-flexible-alerts"></script>
+    <!-- 目录跳转 -->
+    <script src="https://unpkg.com/docsify-toc@1.0.0/dist/toc.js"></script>
+    <!-- 侧边栏 -->
+    <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+    <!-- 分享 -->
+    <script src="//unpkg.com/docsify-share/build/index.min.js"></script>
+</body>
 </html>

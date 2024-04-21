@@ -1,14 +1,13 @@
 <!-- _coverpage.md -->
+<img src="logo/logo.png" width="800">
+<style>
+img {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+</style>
 
-# 小橙的Docsify个人博客Blog  
+# Think About AI <small>4.0</small>
 
-> 💪Docsify-XiaoCheng991小橙的编程学习宝典。
-
-## **简单、轻便 (压缩后 ~21kB)**
-
-- Java
-- 前端
-- 算法
-- 强哥专用
-
-[开始吧！GO](/README.md)
+[Get Started](/README.md)

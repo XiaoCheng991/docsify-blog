@@ -1,5 +1,5 @@
 # 小橙编程学习宝典  
->
+> [!tip]
 > ***XiaoCheng Programming Learning Book***
 >
 
@@ -20,7 +20,7 @@ Domain Name System（域名系统）
 实现域名和IP地址相互映射的一个分布式数据库  
 ***域名解析***  ： 通过主机名得到对应IP地址  
 
-<img src="images/dns解析.png" width="400px" height="300">
+<img src="images/dns解析.png" width="600px" height="400">
 
 + 递归域名服务器(本地缓存)  
 + 根权威服务器、顶级域权威、二级域权威
@@ -168,24 +168,24 @@ var x=event.target
 
 + JSONP 解决跨域 (<http://a.com/jsonp.html> 想要获取 <http://b.com/main.js> 的数据)
   
-```js
-在 http://a.com/jsonp.html 创建一个 script 脚本，
-http://b.com/main.js?callback=xxx。
-在main.js中调用这个回调函数xxx，并且以JSON数据形式作为参数传递，完成回调。
+   ```js
+   在 http://a.com/jsonp.html 创建一个 script 脚本，
+   http://b.com/main.js?callback=xxx。
+   在main.js中调用这个回调函数xxx，并且以JSON数据形式作为参数传递，完成回调。
 
-// 缺点
-只能使用 GET 请求方式，无法使用 POST 请求方式。
-可能被注入恶意代码，篡改页面内容
-```
+   // 缺点
+   只能使用 GET 请求方式，无法使用 POST 请求方式。
+   可能被注入恶意代码，篡改页面内容
+   ```
 
 + CORS 解决跨域 ( W3C标准，"跨域资源共享" )
 
 > 它允许浏览器向跨源服务器，发出XMLHttpRequest请求，从而克服了AJAX只能同源使用的限制。
 
-```js
-// 在http://b.com里面添加响应头声明允许http://a.com的访问
-Access-Control-Allow-Origin: http://a.com
-```
+   ```js
+   // 在http://b.com里面添加响应头声明允许http://a.com的访问
+   Access-Control-Allow-Origin: http://a.com
+   ```
 
 #### (7) 浏览器缓存
 
@@ -502,7 +502,7 @@ if (tempMap.containsKey(n)) {
 
 ---
 
-## ✅三、 计算机网络
+## 三、 计算机网络
 
 ### 1. HTTP 协议
 
@@ -531,7 +531,7 @@ if (tempMap.containsKey(n)) {
 
 ---
 
-## ✅四、 操作系统
+## 四、 操作系统
 
 ### 1. 进程、线程
 
@@ -559,7 +559,7 @@ if (tempMap.containsKey(n)) {
 同样如果要求同时进行并且又要共享某些变量的并发操作，只能用线程不能用进程。
 ```
 
-### 2. 进程 / 线程间通讯方式
+### 2. 通讯方式
 
 进程间通信:
 
