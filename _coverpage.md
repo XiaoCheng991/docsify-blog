@@ -1,5 +1,5 @@
 <!-- _coverpage.md -->
-<img src="logo/logo.jpeg" width="800">
+<img src="logo/logo.jpg" width="800">
 <style>
 img {
     border-radius: 10px;
