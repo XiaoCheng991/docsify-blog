@@ -3,6 +3,3 @@
 > [!tip]
 > ***XiaoCheng Programming Learning Book***
 >
-
-## 一、设计模式概述
-
